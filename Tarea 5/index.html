@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="./">
+</head>
+<body>
+    <h1>Product Management</h1>
+
+    <select id="category-filter" onchange="filterByCategory()">
+        <option value="">All Categories</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Clothing">Clothing</option>
+        <option value="Accessories">Accessories</option>
+    </select>
+
+    <input type="text" id="search-box" placeholder="Search by name">
+    <button onclick="searchProduct()">Search Product</button>
+
+    <div id="products-container"></div>
+
+    <input type="text" id="total-display" placeholder="Total" readonly>
+    <button onclick="calculateTotalPrice()">Calculate Total Price</button>
+    <button onclick="calculateTotalStock()">Calculate Total Stock</button>
+s
+    <script src="main.js"></script>
+</body>
+</html>
